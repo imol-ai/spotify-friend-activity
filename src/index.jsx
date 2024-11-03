@@ -39,7 +39,10 @@ const toggleFriendActivity = async (toggleOn) => {
     );
 
     // Add buddyFeed to the DOM.
-    mainGrid.appendChild(buddyFeed);
+    await waitUntilRender("[aria-label='Now playing view']#Desktop_PanelContainer_Id");
+    const songInfoContainer = mainGrid.querySelector("[aria-label='Now playing view']#Desktop_PanelContainer_Id").parentNode;
+    songInfoContainer.insertBefore(buddyFeed, songInfoContainer.firstChild);
+    // mainGrid.appendChild(buddyFeed);
 
     // Inject FriendActivity into buddyFeed.
     render(<FriendActivity />, buddyFeed);

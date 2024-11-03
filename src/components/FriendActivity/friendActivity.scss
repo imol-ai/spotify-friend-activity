@@ -5,7 +5,8 @@
 .buddy-feed {
   background-color: #0003;
 
-  width: 270px;
+  width: auto;
+  height: 352px;
 
   // Ensure that the buddy feed's height stays within the bounds of the main grid if it overflows.
   min-height: 0;
@@ -17,14 +18,14 @@
   .friend-activity-container {
     height: 100%;
 
-    padding: 1rem 0 1rem 1rem;
+    padding: 0.5rem 0 1rem 1rem;
 
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      margin: 0 1rem 2rem 0;
+      margin: 0 1rem 1rem 0;
 
       h1 {
         font-size: 1rem;
@@ -90,7 +91,7 @@
         align-items: flex-start;
 
         &:not(:last-of-type) {
-          margin-bottom: 1.875rem;
+          margin-bottom: 1rem;
         }
 
         .user-icon-container {

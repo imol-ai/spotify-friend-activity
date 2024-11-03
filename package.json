@@ -4,7 +4,7 @@
   "description": "Google Chrome Extension to view your friends' activity in Spotify's web player",
   "scripts": {
     "build": "rm -rf ./dist && webpack && npm run copy:dist",
-    "copy:dist": "cp ./src/components/popup/popup.html manifest.json ./dist"
+    "copy:dist": "cp ./src/components/Popup/popup.html manifest.json ./dist"
   },
   "repository": {
     "type": "git",
